@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# just an "alias" for `dk`, in case of a typo
+
+dk "$@"
+

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SOUCE="$0"
+CONTAINER="$1"
+
+shift # removes the first args from $@
+
+docker exec -it "$1" bash "$@"

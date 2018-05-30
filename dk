@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" 2> /dev/null && pwd 2> /dev/null )"
 
 CMD1="${DIR}/dk-${1}"
 CMD2="${DIR}/dk-${1}-${2}"

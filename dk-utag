@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+USER_NAME="$1"
+SIMPLE_TAG="$2"
+
+docker tag "${SIMPLE_TAG}" "${USER_NAME}/${SIMPLE_TAG}"
+

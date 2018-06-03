@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+
+if [ 0 -eq $# ]
+then
+
+    docker-compose build
+
+elif [ 1 -eq $# ]
+then
+
+    docker-compose -f "$1" build  .
+
+else
+
+    FILE="$1"
+    shift
+    docker-compose -f "${FILE}" build "$@"
+
+fi
+

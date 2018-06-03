@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
+source dk-all-nets
 source dk-all-imgs
 source dk-all-conts

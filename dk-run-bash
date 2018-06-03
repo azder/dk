@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+SOUCE="$0"
+IMAGE="$1"
+
+shift # removes the first args from $@
+
+docker run -it "${IMAGE}" bash "$@"

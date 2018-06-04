@@ -3,6 +3,6 @@
 SOUCE="$0"
 CONTAINER="$1"
 
-shift # removes the first args from $@
+shift # removes the first arg from $@
 
 docker exec -it "${CONTAINER}" bash "$@"

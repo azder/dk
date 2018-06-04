@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+
+if [ 0 -eq $# ]
+then
+    docker run --rm -it "$(basename "$(pwd)")" bash
+    exit 0
+fi
+
 SOUCE="$0"
 IMAGE="$1"
 

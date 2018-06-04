@@ -4,7 +4,7 @@
 if [ 0 -eq $# ]
 then
 
-    docker build .
+    docker build -t "$(basename "$(pwd)")" .
 
 elif [ 1 -eq $# ]
 then

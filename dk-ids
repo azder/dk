@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+source dk-ids-nets "$@"
+source dk-ids-imgs "$@"
+source dk-ids-conts "$@"

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+
+source dk-conts -f "status=exited" "$@"

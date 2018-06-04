@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-source dk-nets "$@"
+docker logs -f "$@"
+

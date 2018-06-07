@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
 
+#case "$1" in
+#    '???')
+#        source dk-h-all
+#        exit 0
+#        ;;
+#    '??')
+#        source dk-h-cat
+#        exit 0
+#        ;;
+#    '?')
+#        exit 1
+#        ;;
+#esac
+
+
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" 2> /dev/null && pwd 2> /dev/null )"
-
-
-case "$1" in
-    '???')
-        ls -1 "${DIR}"/dk-* | xargs basename | sed 's/-/ /g' || exit 1
-        exit 0
-        ;;
-    '??')
-        cat "${DIR}/dk-$2"|| cat "${DIR}/dk-$2-$3" || cat "${DIR}/$2" || exit 1
-        exit 0
-        ;;
-    '?')
-        exit 1
-        ;;
-esac
 
 
 CMD1="${DIR}/dk-${1}"

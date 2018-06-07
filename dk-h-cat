@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" 2> /dev/null && pwd 2> /dev/null )"
+
+cat "${DIR}/dk-$1"|| cat "${DIR}/dk-$1-$2" || cat "${DIR}/$1" || exit 1
